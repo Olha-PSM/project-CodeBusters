@@ -1,0 +1,39 @@
+
+
+.main-title {
+    color: $main-color-light-theme;
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+    font-family: DM Sans, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.18;
+
+    letter-spacing: -1.28px;
+}
+
+.add-list-color {
+    color: $main-accent-color;
+    font-family: DM Sans, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -1.28px;
+}
+
+
+.main-title {
+    color: black;
+    &:hover {
+        color: teal;
+    }
+
+
+    &--red {
+        color: red;   //* додає приставку
+    }
+}
+

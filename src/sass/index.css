@@ -36,18 +36,18 @@ body.dark-theme {
 }
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    max-width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 32px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 24px;
   }
   .home-container {
@@ -88,34 +88,83 @@ img {
   display: block;
 }
 
-.main-title {
-  color: #111111;
+.shopping-list {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 302px;
+}
+
+.container-list {
+  text-align: center;
+}
+
+.common {
   font-family: DM Sans, sans-serif;
-  font-size: 32px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: -1.28px;
+  line-height: 1.08;
+  letter-spacing: -1.92px;
+}
+
+.main-title {
+  color: #111111;
+  margin-bottom: 140px;
+}
+
+.default-content {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .add-list-color {
   color: #4f2ee8;
-  font-family: DM Sans, sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: -1.28px;
 }
 
-.main-title {
-  color: black;
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .common {
+    font-size: 32px;
+    line-height: 1.18;
+    letter-spacing: -1.28px;
+  }
+  .main-title {
+    margin-bottom: 120px;
+  }
+  .default-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+    margin-bottom: 14px;
+  }
 }
-.main-title:hover {
-  color: teal;
+.default-text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3333;
+  letter-spacing: -0.36px;
 }
-.main-title--red {
-  color: red;
+
+.default-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1440) {
+  .main-title {
+    display: inline-block;
+    margin-left: 0 auto;
+  }
 }/*# sourceMappingURL=index.css.map */

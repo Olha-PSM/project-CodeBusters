@@ -1,39 +1,127 @@
 
 
-.main-title {
-    color: $main-color-light-theme;
+.shopping-list {
     padding-top: 40px;
+    padding-bottom: 302px;
 
-    padding-bottom: 40px;
+}
+
+
+
+.container-list {
+    text-align: center;
+}
+
+.common {
+  
+
     font-family: DM Sans, sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.18;
+    line-height: 1.08;
 
-    letter-spacing: -1.28px;
+    letter-spacing: -1.92px;
+}
+.main-title {
+    color: $main-color-light-theme;
+margin-bottom: 140px;
+   
+}
+
+.default-content {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .add-list-color {
     color: $main-accent-color;
-    font-family: DM Sans, sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.18;
-    letter-spacing: -1.28px;
+
 }
 
 
-.main-title {
-    color: black;
-    &:hover {
-        color: teal;
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+      
     }
 
+    .common {
+            font-size: 32px;
+            line-height: 1.18;
 
-    &--red {
-        color: red;   //* додає приставку
+                letter-spacing: -1.28px;
+    }
+
+    .main-title {
+        margin-bottom: 120px;
+    }
+
+    .default-text {
+       
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.28px;
+        margin-bottom: 14px
+       
     }
 }
+
+
+
+
+ .default-text {
+    color: rgba(0, 0, 0, 0.60);
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: DM Sans,sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3333;
+        letter-spacing: -0.36px;
+}
+
+
+.default-content {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            
+}
+
+.default-img {
+    max-width: 100%;
+    height: auto;
+}
+
+// @media screen and (min-width: 768px) {
+
+  
+// }
+
+
+@media screen and (min-width: 1440) {
+    .main-title {
+        display: inline-block;
+        margin-left: 0 auto;
+    }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1399px) {
+    
+
+// }
+
+// .main-title {
+//     color: black;
+//     &:hover {
+//         color: teal;
+//     }
+
+
+//     &--red {
+//         color: red;   //* додає приставку
+//     }
+// }
 
